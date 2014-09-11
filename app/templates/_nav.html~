@@ -1,0 +1,22 @@
+
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="http://cusp.nyu.edu/" style="padding:0 0 0 10px;"><img src="static/img/cusp.PNG" style="width:90px;height:50px;" /></a>
+      <ul class="nav">
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        {%- if current_user.is_authenticated() -%}
+        <li><a href="{{ url_for('profile') }}">Profile</a></li>
+        <li><a href="{{ url_for('security.logout') }}">Log out</a></li>
+        {%- else -%}
+        <li><a href="{{ url_for('security.login') }}">Log in</a></li>
+        {%- endif -%}
+               <li class="divider-vertical"></li>
+	</ul>
+	       <div class="nav pull-right">
+		</div>
+        </ul>
+       </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+{% extends '/layouts/boilerplate.html' %}
+
+{% block body_class %}main main-index{% endblock %}
+
+{% block layout %}
+  <div class="hero-unit">
+    
+    <table>
+      <tbody>
+	  <tr><td>Exercise 1: download and save the html page for https://www.google.com to google.html</td></tr><tr><td><p></p></td></tr>
+	  <tr><td>Exercise 2: write a web scraper that gets all the links on http://www.techmeme.com/</td></tr><tr><td><p></p></td></tr>
+	  <tr><td>Exercise 3: write a web crawler that goes from http://www.techmeme.com/ to https://www.google.com .  This should be done by starting at techmeme.com and following links until one of them is a link to google.com.  Try to minimize the time it takes to get to google.com if you can.  </td></tr><tr><td><p></p></td></tr>
+	  <tr><td>Exercise 4: download all the pdfs from http://oag.ca.gov/missing/stats</td></tr><tr><td><p></p></td></tr>
+	  <tr><td>Exercise 5: download all the pdfs from http://www.nyc.gov/html/dof/html/forms_reports/property_forms_exemption.shtml</td></tr><tr><td><p></p></td></tr>
+	  <tr><td>Exercise 6: download all the pdfs from http://www.nyc.gov/html/dof/html/forms_reports/property_forms_dividing_lots.shtml</td></tr><tr><td><p></p></td></tr>
+	  <tr><td>Exercise 7: download all the pdfs from http://www.nycourts.gov/forms/familycourt/paternity.shtml</td></tr><tr><td><p></p></td></tr>
+	  <tr><td>Reference for exercises 8 - 11: http://stackoverflow.com/questions/18755412/parse-a-pdf-using-python</td></tr><tr><td><p></p></td></tr>
+	  <tr><td>Exercises 8-12: parse all the pdfs from exercise 4-8 and write the parsed data to a .txt file for each pdf you parse.  Please use the same names for each .pdf to .txt</td></tr><tr><td><p></p></td></tr>
+	  <tr><td>Exercise 13-15: write rss feeders for the following websites: <ul><li>http://www.huffingtonpost.com/news/missing-persons/</li><li>http://www.nij.gov/about/pages/rss.aspx</li><li>http://www.ncmissingpersons.org/</li></ul></td></tr><tr><td><p></p></td></tr>
+	  <tr><td>Exercise 16-23: For the following websites download specific content rather than the whole file and save it to csv's:<ul><li>download all the tables here: http://www.fbi.gov/about-us/cjis/ncic/ncic-missing-person-and-unidentified-person-statistics-for-2012 and save them to a different csv's</li>
+	<li>download all the tables here: http://www.baseball-reference.com/teams/NYY/2014.shtml and save them to different csv's</li>
+	<li>download 100 records from http://www.nyc.gov/html/nypd/html/missing_persons/missing_persons.shtml and save the textual data to a csv, save the pictures in seperate files with the names of the pictures saved to the csv's</li>	
+	<li>Download and save all the posts on the following page: https://www.facebook.com/MissingPeopleFromNewYork</li>
+	<li>Download the content from the following web page: http://newyorkstatemissingpersons.ning.com/page/missing-between-2011 , you will need to visit each page that is linked to by the name of the missing person and download all data presented on the linked to page</li> 
+	<li>Find some useful data from the following website.  It can be anything of value.  It is up to you to decide what data may be of value and then decide how to store such data: http://www.missingpersonsofamerica.com/</li>
+	<li>Download all the data from missing people on the first page.  Decide how to store such data in a csv file: http://www.interpol.int/notice/search/missing</li>
+	</ul></td></tr><tr><td><p></p></td></tr>
+	<tr><td>Exercises 24-27: Make use of selenium to scrape the following websites:<ul><li>http://www.missingkids.com/home</li>
+	<li>http://www.dmv.org/ny-new-york/forms.php</li>
+	<li>http://www.namus.gov/</li>
+	</ul></td></tr><tr><td><p></p></td></tr>
+	<tr><td>Reference for 28-29: https://github.com/kennethreitz/grequests</td></tr><tr><td><p></p></td></tr>
+	<tr><td>Exercise 28: write an asynchronous webscraper to scrape all of the backpage websites for free classes</td></tr><tr><td><p></p></td></tr>
+	<tr><td>Exercise 29: write an asynchronous webscraper to scrape all of the craigslist websites for free classes</td></tr><tr><td><p></p></td></tr>
+	
+      </tbody>
+    </table>
+	
+      
+  </div>
+    </div>
+  </div>
+{% endblock %}
