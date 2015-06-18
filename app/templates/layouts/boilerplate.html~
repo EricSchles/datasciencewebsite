@@ -27,14 +27,7 @@
 
   </script>
   {% endif %}
-  {% assets "js_libs" %}
-  <script type="text/javascript" src="{{ ASSET_URL }}"></script>
-  {% endassets %}
-  {% assets "js_main" %}
-  <script type="text/javascript" src="{{ ASSET_URL }}"></script>
-  {% endassets %}
-</body>
-</html>
+ 
   
   </head>
 <body class="{% block body_class %}{% endblock %}">

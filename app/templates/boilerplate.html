@@ -9,9 +9,6 @@
   <title>Flask-Social Example {{ page_title }}</title>
   <meta name="description" content="A working example of the Flask-Social extension for Flask, a web microframework written in Python">
   <meta name="viewport" content="width=device-width">
-  		
-   <meta name="description" content="A working example of the Flask-Social extension for Flask, a web microframework written in Python">
-  <meta name="viewport" content="width=device-width">
   {% assets "css_main" %}
   <link rel="stylesheet" href="{{ ASSET_URL }}">
   {% endassets %}
@@ -27,16 +24,7 @@
 
   </script>
   {% endif %}
-  {% assets "js_libs" %}
-  <script type="text/javascript" src="{{ ASSET_URL }}"></script>
-  {% endassets %}
-  {% assets "js_main" %}
-  <script type="text/javascript" src="{{ ASSET_URL }}"></script>
-  {% endassets %}
-</body>
-</html>
-  
-  </head>
+</head>
 <body class="{% block body_class %}{% endblock %}">
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <div class="container">
@@ -44,10 +32,15 @@
     {% include "_messages.html" -%}
     {% block layout %}{% endblock -%}
     <footer class="footer">
-      <p>Copyright &copy; 2014 NYU-CUSP </p>
-      <p>This site uses <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>. You can also <a href="https://github.com/EricSchles/AdvancedDataScienceBootCamp">view the source code.</a></p>
+      <p>Copyright &copy; 2014 NYU-CUSP & University of Warwick</p>
+      <p>This site uses <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>. You can also <a href="http://www.github.com/mattupstate/flask-social-example">view the source code.</a></p>
     </footer>
   </div>
-  
+  {% assets "js_libs" %}
+  <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+  {% endassets %}
+  {% assets "js_main" %}
+  <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+  {% endassets %}
 </body>
 </html>

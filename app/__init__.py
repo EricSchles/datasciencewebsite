@@ -16,7 +16,6 @@ app.debug = True
 app.config.from_yaml(app.root_path)
 app.config.from_heroku()
 app.wsgi_app = MethodRewriteMiddleware(app.wsgi_app)
-app.secret_key= "acnedmweqfn19855o"
 
 db = SQLAlchemy(app)
 webassets = Environment(app)
